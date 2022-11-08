@@ -382,6 +382,8 @@ justify-content: space-between; */
   justify-content: center;
   border-radius: 50px;
   color: var(--fill-svg-icon);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -398,8 +400,6 @@ justify-content: space-between; */
 .social-link:focus {
   background-color: #188ce8;
   color: var(--primary-bg-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-footer {
@@ -410,13 +410,12 @@ justify-content: space-between; */
   border-radius: 50px;
   width: 44px;
   height: 44px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-footer:hover,
 .social-link-footer:focus {
   background-color: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon {
@@ -449,12 +448,12 @@ justify-content: space-between; */
   height: 92px;
   border: 1px solid currentColor;
   color: var(--fill-svg-icon);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
 .clients-link:focus {
-  color: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+  color: var(--accent-color); 
 }
 
 .cliens-icon {
@@ -499,7 +498,6 @@ justify-content: space-between; */
 .nav-header-mail:hover,
 .nav-header-mail:focus {
   color: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-header-tel {
@@ -509,12 +507,12 @@ justify-content: space-between; */
   letter-spacing: 0.02em;
   color: var(--text-color);
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-header-tel:hover,
 .nav-header-tel:focus {
   color: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-header-svg {
@@ -767,8 +765,7 @@ justify-content: space-between; */
 
   opacity: 1;
   visibility: visible;
-  pointer-events: initial;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
